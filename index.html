@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квест для Папочки 🎂</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="container" id="game-container">
+        <div id="start-screen" class="screen">
+            <h1>🎉 С Днем Рождения, Папуля! 🎉</h1>
+            <div class="start-image">
+                <img src="start.jpg" alt="Поздравление" id="start-image">
+            </div>
+            <p class="start-description">
+                Привет! Тебя ждет небольшой квест с вопросами. Выбирай правильные ответы, чтобы дойти до финала!
+                <br><br>
+                Готов к приключению?
+            </p>
+            <button id="start-game-btn" class="choice-btn">Начать поиски!!!</button>
+        </div>
+
+        <div id="game-screen" class="screen" style="display: none;">
+            <h1 id="story-text">Загрузка приключения...</h1>
+            <div id="image-container">
+                <img id="story-image" src="" alt="Иллюстрация">
+            </div>
+            <div id="choices-buttons"></div>
+        </div>
+    </div>
+
+    <!-- Конфетти для анимации -->
+    <canvas id="confetti-canvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999;"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
